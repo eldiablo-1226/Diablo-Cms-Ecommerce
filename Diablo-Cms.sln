@@ -1,8 +1,46 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiabloCms.UseCases", "DiabloCms.UseCases\DiabloCms.UseCases.csproj", "{D606A27F-EBC3-4A7A-A9A3-BBE80F6776CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiabloCms.Shared", "DiabloCms.Shared\DiabloCms.Shared.csproj", "{A0A84B4E-4EED-4C40-B744-27E51BAAFEC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiabloCms.Server", "DiabloCms.Server\DiabloCms.Server.csproj", "{4C7C36C3-5AF4-4967-A732-C96CB3F7E10A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiabloCms.Models", "DiabloCms.Models\DiabloCms.Models.csproj", "{087AEDEB-A587-4124-A7E4-D4FF63812AB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiabloCms.Entities", "DiabloCms.Entities\DiabloCms.Entities.csproj", "{9ED35940-D410-44EB-93AD-B9442F39BBE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiabloCms.Data", "DiabloCms.Data\DiabloCms.Data.csproj", "{5182177A-F48B-4513-BADC-16E6006315CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D606A27F-EBC3-4A7A-A9A3-BBE80F6776CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D606A27F-EBC3-4A7A-A9A3-BBE80F6776CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D606A27F-EBC3-4A7A-A9A3-BBE80F6776CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D606A27F-EBC3-4A7A-A9A3-BBE80F6776CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A84B4E-4EED-4C40-B744-27E51BAAFEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A84B4E-4EED-4C40-B744-27E51BAAFEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A84B4E-4EED-4C40-B744-27E51BAAFEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A84B4E-4EED-4C40-B744-27E51BAAFEC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C7C36C3-5AF4-4967-A732-C96CB3F7E10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7C36C3-5AF4-4967-A732-C96CB3F7E10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7C36C3-5AF4-4967-A732-C96CB3F7E10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7C36C3-5AF4-4967-A732-C96CB3F7E10A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{087AEDEB-A587-4124-A7E4-D4FF63812AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{087AEDEB-A587-4124-A7E4-D4FF63812AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{087AEDEB-A587-4124-A7E4-D4FF63812AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{087AEDEB-A587-4124-A7E4-D4FF63812AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED35940-D410-44EB-93AD-B9442F39BBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED35940-D410-44EB-93AD-B9442F39BBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED35940-D410-44EB-93AD-B9442F39BBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED35940-D410-44EB-93AD-B9442F39BBE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5182177A-F48B-4513-BADC-16E6006315CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5182177A-F48B-4513-BADC-16E6006315CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5182177A-F48B-4513-BADC-16E6006315CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5182177A-F48B-4513-BADC-16E6006315CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

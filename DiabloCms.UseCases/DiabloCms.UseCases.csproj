@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DiabloCms.Models\DiabloCms.Models.csproj" />
+      <ProjectReference Include="..\DiabloCms.Data\DiabloCms.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="HarabaSourceGenerators.Generators" Version="1.0.4" />
+      <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.11.0" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.11.0" />
+    </ItemGroup>
+
+</Project>

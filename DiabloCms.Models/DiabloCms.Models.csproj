@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>DiabloCms.Models</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="10.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DiabloCms.Entities\DiabloCms.Entities.csproj" />
+      <ProjectReference Include="..\DiabloCms.Shared\DiabloCms.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="RequestModel\Fit\" />
+      <Folder Include="RequestModel\Wishlists\" />
+    </ItemGroup>
+
+</Project>
