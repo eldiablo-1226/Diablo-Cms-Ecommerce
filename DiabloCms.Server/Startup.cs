@@ -23,7 +23,7 @@ namespace DiabloCms.Server
                 .AddLogTracker()
                 .AddDataBase(Configuration)
                 .AddIdentity()
-                .AddJwtAuthentication()
+                .AddJwtAuthentication(Configuration)
                 .AddAutoMapper(Assembly.GetExecutingAssembly())
                 .AddHttpClient()
                 .AddApplicationService()

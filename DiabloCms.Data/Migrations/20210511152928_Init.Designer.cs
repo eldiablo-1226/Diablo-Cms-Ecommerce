@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DiabloCms.MsSql.Migrations
 {
     [DbContext(typeof(CmsDbContext))]
-    [Migration("20210503192852_Init")]
+    [Migration("20210511152928_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

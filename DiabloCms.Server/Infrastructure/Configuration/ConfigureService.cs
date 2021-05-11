@@ -91,10 +91,10 @@ namespace DiabloCms.Server.Infrastructure.Configuration
             return services;
         }
 
-        public static IServiceCollection AddJwtAuthentication(this IServiceCollection services)
+        public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration config)
         {
-            IApplicationSettingJwt settings = new ApplicationSettingJwt();
-            services.AddTransient<IApplicationSettingJwt, ApplicationSettingJwt>();
+            var settings = new ApplicationSettingJwt(config.GetValue<string>("JWTToken"));
+            services.AddTransient(_ => settings);
 
             services
                 .AddAuthentication(authentication =>

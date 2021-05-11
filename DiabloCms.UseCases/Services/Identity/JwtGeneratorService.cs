@@ -16,7 +16,7 @@ namespace DiabloCms.UseCases.Services.Identity
     [Inject]
     public partial class JwtGeneratorService : IJwtGeneratorService
     {
-        private readonly IApplicationSettingJwt _appJwt;
+        private readonly ApplicationSettingJwt _appJwt;
         private readonly UserManager<CmsUser> _userManager;
 
         public async Task<string> GenerateJwtAsync(CmsUser user)

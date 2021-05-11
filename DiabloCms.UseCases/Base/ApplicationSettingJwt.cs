@@ -3,18 +3,16 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace DiabloCms.UseCases.Base
 {
-    public interface IApplicationSettingJwt
+    public class ApplicationSettingJwt
     {
-        SymmetricSecurityKey GetSymmetricSecurityKey();
-    }
-
-    public class ApplicationSettingJwt : IApplicationSettingJwt
-    {
-        private const string Key = "56BC903172054DAA88E4669CABEF0A2F";
+        public ApplicationSettingJwt(string key)
+            => _key = key;
+        
+        private readonly string _key;
 
         public SymmetricSecurityKey GetSymmetricSecurityKey()
         {
-            return new(Encoding.ASCII.GetBytes(Key));
+            return new(Encoding.ASCII.GetBytes(_key));
         }
     }
 }

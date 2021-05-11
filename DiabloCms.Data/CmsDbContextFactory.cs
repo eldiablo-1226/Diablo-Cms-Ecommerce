@@ -5,9 +5,11 @@ namespace DiabloCms.MsSql
 {
     public class CmsDbContextFactory : IDesignTimeDbContextFactory<CmsDbContext>
     {
-        private const string MsSqlConnectionString = @"Data Source=localhost;Initial Catalog=DemoBase;Integrated Security=True";
+        private const string MsSqlConnectionString = 
+            @"Data Source=localhost;Initial Catalog=DemoBase;Integrated Security=True";
 
-        private const string PostgresqlConnectionString = @"Host=localhost;Port=5432;Database=DemoBase;Username=sa;Password=sa;";
+        private const string PostgresqlConnectionString = 
+            @"Host=localhost;Port=5432;Database=DemoBase;Username=sa;Password=sa;";
 
         public CmsDbContext CreateDbContext(string[] args)
             => CreateCmsDbContext();
