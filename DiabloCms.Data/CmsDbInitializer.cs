@@ -27,19 +27,21 @@ namespace DiabloCms.MsSql
 
         private static async Task SeedUsers(UserManager<CmsUser> userManager)
         {
-            var usr = await userManager.FindByNameAsync("shaxzod12262000")
+            const string adminName = "admin";
+            
+            var usr = await userManager.FindByNameAsync(adminName)
                 .ConfigureAwait(false);
             if (usr == null)
             {
                 var user = new CmsUser
                 {
-                    UserName = "shaxzod12262000",
-                    Email = "shaxzod12262000@gmail.com",
-                    FirstName = "Shahzod",
-                    LastName = "Sayfiyev"
+                    UserName = adminName,
+                    Email = "admin@admin.net",
+                    FirstName = "admin",
+                    LastName = "admin"
                 };
 
-                var result = await userManager.CreateAsync(user, "eldiablo1226")
+                var result = await userManager.CreateAsync(user, "admin")
                     .ConfigureAwait(false);
 
                 if (result.Succeeded)
